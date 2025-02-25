@@ -3,7 +3,10 @@
     <nav class="border-b-2 fixed w-full z-50 bg-white">
       <div class="max-w-7xl mx-auto flex gap-6 items-center py-5">
         <div class="logo">
-          <a href="/" class="font-bold text-2xl">Audit Flow</a>
+          <a href="/" class="font-bold text-2xl"
+            ><span class="text-primary">Audit</span>
+            <span class="text-blue-600">Flow</span>
+          </a>
         </div>
         <div class="flex-1">
           <ul class="flex items-center gap-4 font-semibold">

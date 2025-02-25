@@ -6,7 +6,9 @@
       >
         Teknisi lapangan
       </p>
-      <h1 class="text-5xl font-extrabold">
+      <h1
+        class="antialiased text-foreground text-3xl font-black leading-relaxed tracking-normal md:text-4xl lg:text-5xl"
+      >
         Meningkatkan standar teknisi lapangan ke tingkat yang lebih tinggi
       </h1>
       <p>
