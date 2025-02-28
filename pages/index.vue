@@ -10,7 +10,4 @@
 
   <!-- Article -->
   <SectionArticle />
-
-  <!-- BacToTop -->
-  <BackToTop />
 </template>
