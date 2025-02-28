@@ -8,15 +8,8 @@
       >
         Fitur
       </p>
-      <h1 class="text-4xl font-extrabold">
-        AStreamline operasi Anda dalam 3 langkah
-      </h1>
-      <p>
-        Ungkap kekuatan penuh Audit Flow dan streamline operasi lapangan
-        end-to-end Anda
-      </p>
     </div>
-    <div class="pt-6">
+    <div class="grid grid-cols-3 justify-center mt-6">
       <CardFeature />
       <CardFeature />
       <CardFeature />

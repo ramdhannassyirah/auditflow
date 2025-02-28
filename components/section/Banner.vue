@@ -1,22 +1,41 @@
 <template>
-  <section class="max-w-7xl mx-auto my-20">
+  <div class="relative w-full h-[500px] overflow-hidden">
     <div
-      class="bg-blue-600 flex-col flex p-20 gap-4 h-[468px] rounded-2xl justify-center items-center"
+      v-for="(slide, index) in slides"
+      :key="index"
+      class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+      :class="{
+        'opacity-100': index === activeIndex,
+        'opacity-0': index !== activeIndex,
+      }"
+      :style="{ backgroundImage: `url(${slide.image})` }"
     >
-      <h1 class="font-extrabold text-white text-3xl">Mulai Sekarang</h1>
-      <p class="text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, esse!
-      </p>
-      <div class="">
-        <div class="flex justify-center items-center gap-4">
-          <button class="rounded-md bg-white p-2 font-semibold">
-            Hubungi Sales
-          </button>
-          <button class="rounded-md bg-primary p-2 text-white font-semibold">
-            Mulai Sekarang
-          </button>
-        </div>
-      </div>
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <h2 class="absolute bottom-10 left-10 text-white text-4xl font-bold">
+        {{ slide.title }}
+      </h2>
     </div>
-  </section>
+  </div>
 </template>
+
+<script setup>
+import { ref, onMounted } from "vue";
+
+const slides = [
+  { title: "Welcome to Our Website", image: "/images/hero1.jpg" },
+  { title: "Experience the Best Services", image: "/images/hero2.jpg" },
+  { title: "Join Us Today", image: "/images/hero3.jpg" },
+];
+
+const activeIndex = ref(0);
+
+onMounted(() => {
+  setInterval(() => {
+    activeIndex.value = (activeIndex.value + 1) % slides.length;
+  }, 5000);
+});
+</script>
+
+<style>
+/* Tambahkan styling jika perlu */
+</style>

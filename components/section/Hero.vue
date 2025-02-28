@@ -1,26 +1,45 @@
 <template>
-  <section class="max-w-2xl mx-auto">
-    <div class="flex flex-col justify-center text-center items-center gap-4">
-      <p
-        class="text-blue-600 bg-secondary/20 px-4 py-1 font-semibold rounded-full"
-      >
-        Teknisi lapangan
-      </p>
-      <h1
-        class="antialiased text-foreground text-3xl font-black leading-relaxed tracking-normal md:text-4xl lg:text-5xl"
-      >
-        Meningkatkan standar teknisi lapangan ke tingkat yang lebih tinggi
-      </h1>
-      <p>
-        Rencanakan, eksekusi, dan pantau operasi teknisi lapangan harian Anda
-        dalam satu platform.
-      </p>
+  <div class="relative mx-auto h-[500px] max-w-7xl overflow-hidden">
+    <div
+      v-for="(slide, index) in slides"
+      :key="index"
+      class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+      :class="{
+        'opacity-100': index === activeIndex,
+        'opacity-0': index !== activeIndex,
+      }"
+      :style="{ backgroundImage: `url(${slide.image})` }"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <h2 class="absolute bottom-10 left-10 text-white text-4xl font-bold">
+        {{ slide.title }}
+      </h2>
     </div>
-    <div class="flex justify-center items-center pt-10 gap-4">
-      <button>Hubungi Sales</button>
-      <button class="rounded-md bg-primary p-2 text-white font-semibold">
-        Mulai Sekarang
-      </button>
-    </div>
-  </section>
+  </div>
 </template>
+
+<script setup>
+import { ref, onMounted } from "vue";
+import eventImage from "@/assets/images/events-1.png";
+
+const slides = [
+  {
+    title: "Welcome to Our Website",
+    image: eventImage,
+  },
+  { title: "Experience the Best Services", image: "/images/hero2.jpg" },
+  { title: "Join Us Today", image: eventImage },
+];
+
+const activeIndex = ref(0);
+
+onMounted(() => {
+  setInterval(() => {
+    activeIndex.value = (activeIndex.value + 1) % slides.length;
+  }, 5000);
+});
+</script>
+
+<style>
+/* Tambahkan styling jika perlu */
+</style>

@@ -9,27 +9,48 @@
           </a>
         </div>
         <div class="flex-1 pl-4">
-          <ul class="flex items-center gap-4 text-sm">
+          <ul class="flex items-center gap-6 text-sm">
             <li>
-              <NuxtLink to="/"> Produk </NuxtLink>
+              <NuxtLink
+                class="hover:bg-blue-600 p-2 rounded-md hover:text-white"
+                to="/feature"
+              >
+                Fitur
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Harga </NuxtLink>
+              <NuxtLink
+                class="hover:bg-blue-600 p-2 rounded-md hover:text-white"
+                to="/price"
+              >
+                Harga
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"> Artikel </NuxtLink>
+              <NuxtLink
+                class="hover:bg-blue-600 p-2 rounded-md hover:text-white"
+                to="/article"
+              >
+                Artikel
+              </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact"> Kontak </NuxtLink>
+              <NuxtLink
+                class="hover:bg-blue-600 p-2 rounded-md hover:text-white"
+                to="/contact"
+              >
+                Kontak
+              </NuxtLink>
             </li>
           </ul>
         </div>
         <div class="flex gap-4 text-sm">
-          <button
+          <RouterLink
+            to="/signup"
             class="bg-primary px-4 py-2 rounded-md text-white font-semibold"
           >
             Mulai Sekarang
-          </button>
+          </RouterLink>
           <button>Masuk</button>
         </div>
       </div>

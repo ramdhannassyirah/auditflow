@@ -5,14 +5,11 @@
   <!-- Client -->
   <SectionClient />
 
-  <!-- Benefit -->
-  <SectionBenefit />
-
   <!-- Feature -->
   <SectionFeature />
 
-  <!-- Banner -->
-  <SectionBanner />
+  <!-- Article -->
+  <SectionArticle />
 
   <!-- BacToTop -->
   <BackToTop />

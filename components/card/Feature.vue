@@ -1,26 +1,29 @@
 <template>
-  <div class="grid grid-cols-2 gap-20">
-    <div class="flex flex-col gap-4">
-      <div class="">
-        <p class="text-secondary font-semibold">Rencanakan</p>
-        <h1 class="text-2xl font-extrabold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          aliquid itaque excepturi velit numquam exercitationem reprehenderit
-        </h1>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-        harum modi expedita unde officiis error nesciunt perferendis, impedit
-        quasi ratione sunt, debitis magnam ea recusandae aut ab natus, rem
-        ducimus?
-      </p>
+  <div class="max-w-sm border p-6 rounded-lg flex flex-col gap-2">
+    <div class="bg-secondary/20 w-fit p-2 rounded-full">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-archive text-blue-600"
+      >
+        <rect width="20" height="5" x="2" y="3" rx="1" />
+        <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" />
+        <path d="M10 12h4" />
+      </svg>
     </div>
-    <div class="">
-      <img
-        src="~/../../../assets/images/feature.webp"
-        class="w-full h-auto"
-        alt="Feature Image"
-      />
-    </div>
+    <h1 class="text-2xl font-bold">Lorem ipsum dolor sit amet.</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nihil?
+      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Nemo numquam molestiae ipsam sit hic delectus cupiditate
+      id odio natus fuga.
+    </p>
   </div>
 </template>
