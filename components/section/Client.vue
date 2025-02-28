@@ -1,6 +1,10 @@
 <template>
-  <section class="max-w-7xl mx-auto my-10 p-10 rounded-md overflow-hidden">
-    <h1 class="text-4xl font-bold text-center mb-6">Telah Dipercaya Oleh</h1>
+  <section
+    class="max-w-7xl mx-auto my-10 p-10 rounded-md overflow-hidden px-2 xl:px-0"
+  >
+    <h1 class="lg:text-4xl text-xl font-bold text-center mb-6">
+      Telah Dipercaya Oleh
+    </h1>
     <div class="relative flex items-center overflow-hidden w-full">
       <!-- Wrapper untuk animasi -->
       <div class="flex animate-slide pt-6">

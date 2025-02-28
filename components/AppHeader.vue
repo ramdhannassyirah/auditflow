@@ -1,14 +1,14 @@
 <template>
   <header>
     <nav class="border-b-2 fixed w-full z-50 bg-white">
-      <div class="max-w-7xl mx-auto flex gap-6 items-center py-3">
+      <div class="max-w-7xl mx-auto flex gap-6 items-center py-3 px-2 xl:px-0">
         <div class="logo">
           <a href="/" class="font-bold text-2xl"
             ><span class="text-primary">audit</span>
             <span class="text-blue-600">flow</span>
           </a>
         </div>
-        <div class="flex-1 pl-4">
+        <div class="flex-1 pl-4 hidden lg:block">
           <ul class="flex items-center gap-6 text-sm">
             <li>
               <NuxtLink
@@ -51,7 +51,7 @@
           >
             Mulai Sekarang
           </RouterLink>
-          <button>Masuk</button>
+          <button class="hidden md:block">Masuk</button>
         </div>
       </div>
     </nav>

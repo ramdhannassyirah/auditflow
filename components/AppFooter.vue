@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-primary p-10">
-    <div class="flex max-w-5xl mx-auto gap-6">
+    <div class="flex flex-wrap max-w-5xl mx-auto gap-6">
       <div class="max-w-sm flex flex-col gap-4">
         <h1 class="font-bold text-white text-2xl">Audit Flow</h1>
         <p class="text-gray-300 font-semibold">

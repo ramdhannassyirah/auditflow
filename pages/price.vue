@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto">
+  <section class="max-w-7xl mx-auto px-2 xl:px-0">
     <div
       class="flex flex-col max-w-2xl mx-auto justify-center text-center items-center gap-4"
     >
@@ -18,7 +18,7 @@
         dalam satu platform.
       </p>
     </div>
-    <div class="grid grid-cols-4 gap-4 pt-4">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
       <CardPrice />
       <CardPrice />
       <CardPrice />

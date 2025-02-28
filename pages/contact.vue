@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto">
+  <section class="max-w-7xl mx-auto px-2 xl:px-0">
     <div class="flex flex-col justify-center text-center items-center gap-4">
       <p
         class="text-blue-600 bg-secondary/20 px-4 py-1 font-semibold rounded-full"
@@ -16,11 +16,11 @@
         dalam satu platform.
       </p>
     </div>
-    <div class="grid grid-cols-2 pt-10">
+    <div class="grid md:grid-cols-2 gap-4 pt-10">
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.554989259773!2d106.81305362380371!3d-6.227097759346837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f421b89f1af9%3A0xb9d1c4279362b143!2sACI%20FMA%20Indonesia!5e0!3m2!1sid!2sid!4v1740462610234!5m2!1sid!2sid"
-          width="600"
+          width="100%"
           height="450"
           style="border: 0"
           allowfullscreen=""
